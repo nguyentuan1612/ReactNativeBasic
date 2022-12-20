@@ -1,36 +1,37 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-const Tab = createMaterialBottomTabNavigator();
 import Book from "./Srceens/book";
 import Game from "./Srceens/game";
 import Movie from "./Srceens/movie";
 
+const Tab = createBottomTabNavigator();
 export default function App() {
   return (
     <NavigationContainer>
       {
         <Tab.Navigator
           initialRouteName="Game"
-          activeColor="green"
-          inactiveColor="white"
-          barStyle={{ backgroundColor: "#000" }}
-          shifting = {true}
+          screenOptions={{
+            headerShown: false,
+            tabBarStyle: { backgroundColor: "black" },
+            tabBarInactiveTintColor:"white",
+            tabBarActiveTintColor: "green"
+          }}
         >
           <Tab.Screen
             name="Game"
-            
             component={Game}
             options={{
-              tabBarColor: "black",
+              tabBarLabel: "Game",
               tabBarIcon: ({ color }) => {
                 return (
                   <MaterialCommunityIcons
-                    size={26}
+                    name="microsoft-xbox"
+                    size={23}
                     color={color}
-                    name="gamepad"
                   />
                 );
               },
@@ -40,18 +41,29 @@ export default function App() {
             name="Book"
             component={Book}
             options={{
-              tabBarIcon: ({ color }) => (
-                <MaterialCommunityIcons name="book" size={26} color={color} />
-              ),
+              tabBarLabel: "Book",
+              tabBarIcon: ({ color }) => {
+                return (
+                  <MaterialCommunityIcons name="book" size={23} color={color} />
+                );
+              },
             }}
           />
+
           <Tab.Screen
             name="Movie"
             component={Movie}
             options={{
-              tabBarIcon: ({ color }) => (
-                <MaterialCommunityIcons name="movie" size={26} color={color} />
-              ),
+              tabBarLabel: "Movie",
+              tabBarIcon: ({ color }) => {
+                return (
+                  <MaterialCommunityIcons
+                    name="movie"
+                    size={23}
+                    color={color}
+                  />
+                );
+              },
             }}
           />
         </Tab.Navigator>
