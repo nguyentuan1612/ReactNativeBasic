@@ -1,11 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StatusBar } from "expo-status-bar";
+import { ImageBackground, StyleSheet, Text, View } from "react-native";
+import ItemMovie from "./ItemMovie";
 export default function Movie() {
   return (
     <View style={styles.container}>
-      <Text>This is Movie</Text>
-      <StatusBar style="auto" />
+      <ImageBackground
+        source={require("../../image/movie-02.jpg")}
+        style={{ width: "100%", height: "100%" }}
+        blurRadius={5}
+      >
+        <StatusBar style="auto" />
+        <ItemMovie />
+      </ImageBackground>
     </View>
   );
 }
@@ -13,8 +19,8 @@ export default function Movie() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

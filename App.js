@@ -28,7 +28,7 @@ export default function App() {
               tabBarIcon: ({ color }) => {
                 return (
                   <MaterialCommunityIcons
-                    size={20}
+                    size={26}
                     color={color}
                     name="gamepad"
                   />
@@ -41,7 +41,7 @@ export default function App() {
             component={Book}
             options={{
               tabBarIcon: ({ color }) => (
-                <MaterialCommunityIcons name="book" size={20} color={color} />
+                <MaterialCommunityIcons name="book" size={26} color={color} />
               ),
             }}
           />
@@ -50,7 +50,7 @@ export default function App() {
             component={Movie}
             options={{
               tabBarIcon: ({ color }) => (
-                <MaterialCommunityIcons name="movie" size={20} color={color} />
+                <MaterialCommunityIcons name="movie" size={26} color={color} />
               ),
             }}
           />
