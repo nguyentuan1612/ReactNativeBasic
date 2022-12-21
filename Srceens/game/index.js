@@ -20,7 +20,7 @@ export default function Game() {
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "center",
-            paddingLeft: 16
+            paddingLeft: 16,
           }}
         >
           <View>
@@ -58,6 +58,7 @@ export default function Game() {
             tabBarActiveTintColor: "red",
             tabBarInactiveTintColor: "white",
             tabBarScrollEnabled: true,
+            swipeEnabled: false,
             tabBarItemStyle: {
               width: 100,
               borderColor: "white",

@@ -17,8 +17,8 @@ export default function App() {
           screenOptions={{
             headerShown: false,
             tabBarStyle: { backgroundColor: "black" },
-            tabBarInactiveTintColor:"white",
-            tabBarActiveTintColor: "green"
+            tabBarInactiveTintColor: "white",
+            tabBarActiveTintColor: "green",
           }}
         >
           <Tab.Screen
@@ -26,7 +26,7 @@ export default function App() {
             component={Game}
             options={{
               tabBarLabel: "Game",
-              
+              tabBarActiveTintColor: "red",
               tabBarIcon: ({ color }) => {
                 return (
                   <MaterialCommunityIcons
@@ -43,7 +43,7 @@ export default function App() {
             component={Book}
             options={{
               tabBarStyle: {
-                  backgroundColor:"#F4EFDE",
+                backgroundColor: "#F4EFDE",
               },
               tabBarInactiveTintColor: "black",
               tabBarActiveTintColor: "orange",
