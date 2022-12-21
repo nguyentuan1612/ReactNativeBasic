@@ -1,20 +1,20 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
 import styles from "./style";
-const PopularyItem = () => {
+const PopularyItem = (Props) => {
   return (
     <View style={styles.container}>
       <Image
         source={{
-          uri: "https://upload.wikimedia.org/wikipedia/vi/9/9f/Cyberpunk_2077_box_art.jpg",
+          uri: Props.image,
         }}
         style={{ width: "90%", height: "78%", borderRadius: 8 }}
       />
 
       <View style={{ width: "90%" }}>
-        <Text style={{ color: "red" , marginTop: 10}}>Action</Text>
+        <Text style={{ color: "red" , marginTop: 10}}>{Props.caterogy}</Text>
         <Text style={{ color: "white", fontSize: 18, fontWeight: "bold" ,marginTop: 3}}>
-          Cyberpunk 2077
+          {Props.name}
         </Text>
       </View>
       <View
@@ -25,7 +25,7 @@ const PopularyItem = () => {
           justifyContent: "space-between",
         }}
       >
-        <Text style={{ color: "white" }}>$22,3</Text>
+        <Text style={{ color: "white" }}>{Props.price}</Text>
         <Text
           style={{
             color: "white",
