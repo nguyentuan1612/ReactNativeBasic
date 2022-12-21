@@ -11,7 +11,7 @@ import Recent from "./popularRecent";
 const Popular = () => {
   const GameData = [
     { image: "https://upload.wikimedia.org/wikipedia/vi/9/9f/Cyberpunk_2077_box_art.jpg", caterogy: "Action", name: "Cyberpunk 2077", price: "$22,3" },
-    { image: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Spider-Man_PS4_cover.jpg/220px-Spider-Man_PS4_cover.jpg", caterogy: "adventure", name: "Marvel's Spider Man", price: "33,2" },
+    { image: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Spider-Man_PS4_cover.jpg/220px-Spider-Man_PS4_cover.jpg", caterogy: "adventure", name: "Marvel's Spider Man", price: "$33,2" },
   ];
 
   const RecentData = [

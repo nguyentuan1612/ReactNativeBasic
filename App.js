@@ -16,7 +16,7 @@ export default function App() {
           initialRouteName="Game"
           screenOptions={{
             headerShown: false,
-            tabBarStyle: { backgroundColor: "black" },
+            tabBarStyle: { backgroundColor: "#222222" },
             tabBarInactiveTintColor: "white",
             tabBarActiveTintColor: "green",
           }}
