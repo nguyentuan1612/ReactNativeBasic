@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
-
+import CaterogyItem from './CaterogyItem'
 export default function Book() {
   return (
     <View style={styles.container}>
@@ -13,6 +13,7 @@ export default function Book() {
       >
         <View style={styles.body}>
           <Text style={styles.textHeader}>Expor Market</Text>
+          <CaterogyItem/>
         </View>
       </ImageBackground>
     </View>
