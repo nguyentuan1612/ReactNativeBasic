@@ -2,7 +2,6 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import * as React from "react";
-import { NavigationContainer } from "@react-navigation/native";
 
 const Tab = createMaterialTopTabNavigator();
 import Popular from "./screens/popular";
