@@ -1,7 +1,31 @@
 import { StatusBar } from "expo-status-bar";
-import { ImageBackground, StyleSheet, Text, View } from "react-native";
-import CaterogyItem from './CaterogyItem'
+import {
+  FlatList,
+  ImageBackground,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+import CaterogyItem from "./CaterogyItem";
 export default function Book() {
+  const CaterogyData = [
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/599/599502.png",
+      name: "Trending",
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/599/599502.png",
+      name: "Trending",
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/599/599502.png",
+      name: "Trending",
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/599/599502.png",
+      name: "Trending",
+    },
+  ];
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -13,7 +37,14 @@ export default function Book() {
       >
         <View style={styles.body}>
           <Text style={styles.textHeader}>Expor Market</Text>
-          <CaterogyItem/>
+          <FlatList
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            data={CaterogyData}
+            renderItem={({ item }) => {
+              return <CaterogyItem name={item.name} icon={item.icon} />;
+            }}
+          />
         </View>
       </ImageBackground>
     </View>
@@ -27,7 +58,7 @@ const styles = StyleSheet.create({
 
   body: {
     padding: 12,
-
+    flex: 1
   },
 
   textHeader: {

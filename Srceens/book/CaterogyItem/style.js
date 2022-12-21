@@ -2,8 +2,8 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    width: "38%",
-    height: "20%",
+    width: 120,
+    height: 40,
     borderWidth: 1,
     backgroundColor: "white",
     borderRadius: 10,
@@ -13,7 +13,8 @@ const styles = StyleSheet.create({
     borderColor: "brown",
     borderWidth: 1,
     backgroundColor:"#FDE2CA",
-    marginTop: 16
+    marginTop: 16,
+    marginRight: 8
   },
 });
 
