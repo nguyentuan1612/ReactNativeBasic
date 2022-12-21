@@ -43,7 +43,7 @@ export default function App() {
             component={Book}
             options={{
               tabBarStyle: {
-                  backgroundColor:"white",
+                  backgroundColor:"#F4EFDE",
               },
               tabBarInactiveTintColor: "black",
               tabBarActiveTintColor: "orange",

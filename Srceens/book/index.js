@@ -35,11 +35,11 @@ export default function Book() {
       name: "Trending",
     },
     {
-      icon: "https://cdn-icons-png.flaticon.com/512/2508/2508220.png",
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOmHUiTNchRJ2yxkA6wd3Y5Fv4f10mENwjEg&usqp=CAU",
       name: "Romance",
     },
     {
-      icon: "https://cdn-icons-png.flaticon.com/512/2880/2880690.png",
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJezSGLCzLOrB5DmAN5sQawxzPtFRIOcaAg&usqp=CAU",
       name: "Children",
     },
     {
@@ -67,10 +67,9 @@ export default function Book() {
     <View style={styles.container}>
       <ImageBackground
         source={{
-          uri: "https://r1.ilikewallpaper.net/iphone-12-pro-max-wallpapers/download-149521/book-open-on-dried-leaves-top-view-photography.jpg",
+          uri: "https://images3.alphacoders.com/111/1114536.jpg",
         }}
         style={{ width: "100%", height: "100%" }}
-        blurRadius={5}
       >
         <View style={styles.body}>
           <Text style={styles.textHeader}>Expor Market</Text>
@@ -101,6 +100,7 @@ export default function Book() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor:"#FBF9F2"
   },
 
   body: {

@@ -8,10 +8,10 @@ const BookItem = () => {
         source={{
           uri: "http://vietart.co/blog/wp-content/uploads/2014/01/9_thiet_ke_bia_sach_dep_20.jpg",
         }}
-        style={{ width: "80%", height: "60%", borderRadius: 10 }}
+        style={{ width: "85%", height: "63%", borderRadius: 5 }}
       />
       <View style={{ width: "80%" }}>
-        <Text style={{ fontSize: 15, fontWeight: "bold" }}>The Republic</Text>
+        <Text style={{ fontSize: 15, fontWeight: "bold"}}>The Republic</Text>
         <Text>Ripato</Text>
         <View
           style={{
