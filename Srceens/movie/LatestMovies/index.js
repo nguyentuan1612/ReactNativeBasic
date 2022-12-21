@@ -7,7 +7,7 @@ const ItemLatestMovie = (Props) => {
     <View style={styles.container}>
       <Image
         source={{ uri: Props.image }}
-        style={{ width: "30%", height: "100%" }}
+        style={{ width: "30%", height: "100%", borderRadius: 10 }}
       />
 
       <View style={{ height: "100%", width: "67%" }}>

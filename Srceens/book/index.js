@@ -7,6 +7,8 @@ import {
   View,
 } from "react-native";
 import CaterogyItem from "./CaterogyItem";
+import BookItem from "./BookItem";
+
 export default function Book() {
   const CaterogyData = [
     {
@@ -14,16 +16,51 @@ export default function Book() {
       name: "Trending",
     },
     {
-      icon: "https://cdn-icons-png.flaticon.com/512/599/599502.png",
-      name: "Trending",
+      icon: "https://cdn-icons-png.flaticon.com/512/2508/2508220.png",
+      name: "Romance",
     },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/2880/2880690.png",
+      name: "Children",
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/2642/2642257.png",
+      name: "detective",
+    },
+  ];
+
+  const BookData = [
     {
       icon: "https://cdn-icons-png.flaticon.com/512/599/599502.png",
       name: "Trending",
     },
     {
-      icon: "https://cdn-icons-png.flaticon.com/512/599/599502.png",
-      name: "Trending",
+      icon: "https://cdn-icons-png.flaticon.com/512/2508/2508220.png",
+      name: "Romance",
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/2880/2880690.png",
+      name: "Children",
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/2642/2642257.png",
+      name: "detective",
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/2880/2880690.png",
+      name: "Children",
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/2642/2642257.png",
+      name: "detective",
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/2880/2880690.png",
+      name: "Children",
+    },
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/2642/2642257.png",
+      name: "detective",
     },
   ];
   return (
@@ -45,6 +82,16 @@ export default function Book() {
               return <CaterogyItem name={item.name} icon={item.icon} />;
             }}
           />
+
+          <FlatList
+            showsVerticalScrollIndicator={false}
+            numColumns = {2}
+            data={BookData}
+            renderItem={({ item }) => {
+              return <BookItem />;
+              
+            }}
+          />
         </View>
       </ImageBackground>
     </View>
@@ -58,7 +105,6 @@ const styles = StyleSheet.create({
 
   body: {
     padding: 12,
-    flex: 1
   },
 
   textHeader: {

@@ -26,6 +26,7 @@ export default function App() {
             component={Game}
             options={{
               tabBarLabel: "Game",
+              
               tabBarIcon: ({ color }) => {
                 return (
                   <MaterialCommunityIcons
