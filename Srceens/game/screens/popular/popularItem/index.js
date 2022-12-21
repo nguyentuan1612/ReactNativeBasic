@@ -29,14 +29,14 @@ const PopularyItem = (Props) => {
         <Text
           style={{
             color: "white",
-            fontSize: 12,
+            fontSize: 11,
             borderWidth: 1,
-            width: 90,
-            height: 20,
+            width: 80,
+            height: 18,
             borderColor: "#00FF00",
             color:"#00FF00",
             textAlign:"center",
-            lineHeight:20
+            lineHeight:17
           }}
         >
           PRE BOOKING
