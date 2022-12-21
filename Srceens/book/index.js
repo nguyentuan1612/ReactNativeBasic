@@ -41,15 +41,15 @@ export default function Book() {
     },
     {
       icon: "http://vietart.co/blog/wp-content/uploads/2014/01/1_thiet_ke_bia_sach_dep_20.jpg",
-      name: " gather to go to",
+      name: "gather to go to",
     },
     {
       icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOmHUiTNchRJ2yxkA6wd3Y5Fv4f10mENwjEg&usqp=CAU",
-      name: " I hate tranquility",
+      name: "I hate tranquility",
     },
     {
       icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJezSGLCzLOrB5DmAN5sQawxzPtFRIOcaAg&usqp=CAU",
-      name: " always crowded and",
+      name: "always crowded and",
     },
     {
       icon: "http://vietart.co/blog/wp-content/uploads/2014/01/4_thiet_ke_bia_sach_dep_20.jpg",
@@ -57,7 +57,7 @@ export default function Book() {
     },
     {
       icon: "http://vietart.co/blog/wp-content/uploads/2014/01/6_thiet_ke_bia_sach_dep_20.jpg",
-      name: " tranquil place to ",
+      name: "tranquil place to ",
     },
     {
       icon: "http://vietart.co/blog/wp-content/uploads/2014/01/7_thiet_ke_bia_sach_dep_20.jpg",
@@ -70,12 +70,12 @@ export default function Book() {
         source={{
           uri: "https://images3.alphacoders.com/111/1114536.jpg",
         }}
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", height: "100%"}}
       >
         <View style={styles.body}>
           <View style={styles.header}>
             <Text style={styles.textHeader}>Expor Market</Text>
-            <View style={{ flexDirection: "row" }}>
+            <View style={{ flexDirection: "row"}}>
               <Image
                 source={{
                   uri: "https://cdn-icons-png.flaticon.com/512/3602/3602145.png",
