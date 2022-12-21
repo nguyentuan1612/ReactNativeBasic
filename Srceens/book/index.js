@@ -31,36 +31,36 @@ export default function Book() {
 
   const BookData = [
     {
-      icon: "https://cdn-icons-png.flaticon.com/512/599/599502.png",
-      name: "Trending",
+      icon: "http://vietart.co/blog/wp-content/uploads/2014/01/8_thiet_ke_bia_sach_dep_20.jpg",
+      name: "people go jogging ",
+    },
+    {
+      icon: "http://vietart.co/blog/wp-content/uploads/2014/01/10_thiet_ke_bia_sach_dep_20.jpg",
+      name: "seriously polluted",
+    },
+    {
+      icon: "http://vietart.co/blog/wp-content/uploads/2014/01/1_thiet_ke_bia_sach_dep_20.jpg",
+      name: " gather to go to",
     },
     {
       icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOmHUiTNchRJ2yxkA6wd3Y5Fv4f10mENwjEg&usqp=CAU",
-      name: "Romance",
+      name: " I hate tranquility",
     },
     {
       icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJezSGLCzLOrB5DmAN5sQawxzPtFRIOcaAg&usqp=CAU",
-      name: "Children",
+      name: " always crowded and",
     },
     {
-      icon: "https://cdn-icons-png.flaticon.com/512/2642/2642257.png",
-      name: "detective",
+      icon: "http://vietart.co/blog/wp-content/uploads/2014/01/4_thiet_ke_bia_sach_dep_20.jpg",
+      name: "more houses grow",
     },
     {
-      icon: "https://cdn-icons-png.flaticon.com/512/2880/2880690.png",
-      name: "Children",
+      icon: "http://vietart.co/blog/wp-content/uploads/2014/01/6_thiet_ke_bia_sach_dep_20.jpg",
+      name: " tranquil place to ",
     },
     {
-      icon: "https://cdn-icons-png.flaticon.com/512/2642/2642257.png",
-      name: "detective",
-    },
-    {
-      icon: "https://cdn-icons-png.flaticon.com/512/2880/2880690.png",
-      name: "Children",
-    },
-    {
-      icon: "https://cdn-icons-png.flaticon.com/512/2642/2642257.png",
-      name: "detective",
+      icon: "http://vietart.co/blog/wp-content/uploads/2014/01/7_thiet_ke_bia_sach_dep_20.jpg",
+      name: "One feature of the",
     },
   ];
   return (
@@ -84,11 +84,10 @@ export default function Book() {
 
           <FlatList
             showsVerticalScrollIndicator={false}
-            numColumns = {2}
+            numColumns={2}
             data={BookData}
             renderItem={({ item }) => {
-              return <BookItem />;
-              
+              return <BookItem icon={item.icon} name = {item.name} />;
             }}
           />
         </View>
@@ -100,11 +99,12 @@ export default function Book() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:"#FBF9F2"
+    backgroundColor: "#FBF9F2",
   },
 
   body: {
     padding: 12,
+    marginBottom:105
   },
 
   textHeader: {

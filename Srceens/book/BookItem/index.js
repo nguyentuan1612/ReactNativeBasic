@@ -1,18 +1,18 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
 import styles from "./style";
-const BookItem = () => {
+const BookItem = (Props) => {
   return (
     <View style={styles.container}>
       <Image
         source={{
-          uri: "http://vietart.co/blog/wp-content/uploads/2014/01/9_thiet_ke_bia_sach_dep_20.jpg",
+          uri: Props.icon,
         }}
-        style={{ width: "85%", height: "63%", borderRadius: 5 }}
+        style={{ width: "89%", height: "70%", borderRadius: 5 }}
       />
       <View style={{ width: "80%" }}>
-        <Text style={{ fontSize: 15, fontWeight: "bold"}}>The Republic</Text>
-        <Text>Ripato</Text>
+        <Text style={{ fontSize: 15, fontWeight: "bold"}}>{Props.name}</Text>
+        <Text style={{color:"silver"}}>Ripato</Text>
         <View
           style={{
             width: "100%",
