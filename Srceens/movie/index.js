@@ -4,6 +4,7 @@ import {
   ImageBackground,
   StyleSheet,
   Text,
+  Image,
   View,
 } from "react-native";
 import ItemMovie from "./MovieIteam";
@@ -101,7 +102,12 @@ export default function Movie() {
             >
               Movies
             </Text>
-            <MaterialCommunityIcons name="magnify-expand" size={30} color={"white"}/>
+            <Image
+                source={{
+                  uri: "https://cdn-icons-png.flaticon.com/512/2811/2811806.png",
+                }}
+                style={{ width: 28, height: 28, tintColor: "white" }}
+              />
           </View>
           <View style={{ height: "40%" }}>
             <FlatList

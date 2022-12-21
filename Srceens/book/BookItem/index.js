@@ -10,7 +10,7 @@ const BookItem = (Props) => {
         }}
         style={{ width: "89%", height: "70%", borderRadius: 5 }}
       />
-      <View style={{ width: "80%" }}>
+      <View style={{ width: "89%" }}>
         <Text style={{ fontSize: 15, fontWeight: "bold"}}>{Props.name}</Text>
         <Text style={{color:"silver"}}>Ripato</Text>
         <View

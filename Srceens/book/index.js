@@ -4,6 +4,7 @@ import {
   ImageBackground,
   StyleSheet,
   Text,
+  Image,
   View,
 } from "react-native";
 import CaterogyItem from "./CaterogyItem";
@@ -72,7 +73,23 @@ export default function Book() {
         style={{ width: "100%", height: "100%" }}
       >
         <View style={styles.body}>
-          <Text style={styles.textHeader}>Expor Market</Text>
+          <View style={styles.header}>
+            <Text style={styles.textHeader}>Expor Market</Text>
+            <View style={{ flexDirection: "row" }}>
+              <Image
+                source={{
+                  uri: "https://cdn-icons-png.flaticon.com/512/3602/3602145.png",
+                }}
+                style={{ width: 25, height: 25, tintColor: "white" , marginHorizontal:8 }}
+              />
+              <Image
+                source={{
+                  uri: "https://cdn-icons-png.flaticon.com/512/2811/2811806.png",
+                }}
+                style={{ width: 28, height: 28, tintColor: "white", marginHorizontal:8 }}
+              />
+            </View>
+          </View>
           <FlatList
             horizontal={true}
             showsHorizontalScrollIndicator={false}
@@ -87,7 +104,7 @@ export default function Book() {
             numColumns={2}
             data={BookData}
             renderItem={({ item }) => {
-              return <BookItem icon={item.icon} name = {item.name} />;
+              return <BookItem icon={item.icon} name={item.name} />;
             }}
           />
         </View>
@@ -104,13 +121,18 @@ const styles = StyleSheet.create({
 
   body: {
     padding: 12,
-    marginBottom:105
+    marginBottom: 105,
+  },
+
+  header: {
+    marginTop: 20,
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
 
   textHeader: {
     fontWeight: "bold",
     fontSize: 20,
     color: "white",
-    marginTop: 20,
   },
 });
